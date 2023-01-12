@@ -7,7 +7,7 @@ final ItemScrollController itemScrollController = ItemScrollController();
 final ItemPositionsListener itemPositionsListener =
     ItemPositionsListener.create();
 
-bool floatingActionBtnIsClicked = true;
+
 
 class SurahBuilder extends StatefulWidget {
   final surah;
@@ -200,6 +200,7 @@ class _SurahBuilderState extends State<SurahBuilder> {
   Widget build(BuildContext context) {
     int LengthOfSurah = noOfVerses[widget.surah];
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.yellow),
       home: Scaffold(
         appBar: AppBar(
